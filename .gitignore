@@ -154,3 +154,8 @@ $RECYCLE.BIN/
 
 # Mac desktop service store files
 .DS_Store
+/.nuget
+/MFUnitTest_2012/lib
+/MFUnitTest_2013/lib
+/MFUnitTest_2013/packages
+/MFUnitTest_2012/packages
