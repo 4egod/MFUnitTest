@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>MFUnitTest</id>
+    <version>0.14.11</version>
+    <title>.NET Micro Framework Unit Test Core</title>
+    <authors>Dmitry Tarasov</authors>
+    <owners>Dmitry Tarasov</owners>
+    <description>
+      .Net Micro Framework Unit Testing Core Libraries.
+    </description>
+    <releaseNotes>
+    </releaseNotes>
+    <summary>
+      .Net Micro Framework Unit Testing Core Libraries.
+    </summary>
+    <language>en-US</language>
+    <projectUrl>https://nuget.org/packages/MFUnitTest</projectUrl>
+    <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
+    <copyright>Copyright (C) Dmitry Tarasov, 2014</copyright>
+    <references></references>
+    <tags>netmf unit test micro</tags>
+  </metadata>
+  <files>
+    <file src="lib\" target="lib" />
+    <file src="tools\" target="tools" />
+    <file src="content\" target="content" />
+  </files>
+</package>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="MFUnitTestPackage.vs12" Version="0.14.11" Language="en-US" Publisher="Dmitry Tarasov" />
+    <DisplayName>MFUnitTest Visual Studio 2013 Support</DisplayName>
+    <Description xml:space="preserve">A project template for creating .NET Micro Framework Unit Test Projects.</Description>
+    <Icon>Project.ico</Icon>
+    <PreviewImage>Preview.png</PreviewImage>
+    <Tags>NETMF;Micro Framework;Unit Test;C#</Tags>
+  </Metadata>
+  <Installation InstalledByMsi="false">
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[12.0,13.0)" />
+    <InstallationTarget Version="[12.0,13.0)" Id="Microsoft.VisualStudio.VSWinDesktopExpress" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.5,)" />
+    <Dependency Id="Microsoft.VisualStudio.MPF.12.0" DisplayName="Visual Studio MPF 12.0" Version="[12.0]" />
+    <Dependency Id="Microsoft.NETMF.CoreDebug.vs12" DisplayName="Microsoft.NETMF.CoreDebug" Version="[4.3,)" />
+    <Dependency Id="NuGet.67e54e40-0ae3-42c5-a949-fddf5739e6a5" DisplayName="NuGet Package Manager" d:Source="Manual" Version="[2.8,)" d:InstallSource="Download" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="ProjectTemplate_2013" d:TargetPath="|ProjectTemplate_2013;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
+  </Assets>
+</PackageManifest>
