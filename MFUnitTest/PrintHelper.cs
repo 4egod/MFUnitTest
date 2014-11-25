@@ -2,7 +2,7 @@
 namespace MFUnitTest
 {
     using System;
-    using System.Diagnostics;
+    using Microsoft.SPOT;
 
     internal static class PrintHelper
     {

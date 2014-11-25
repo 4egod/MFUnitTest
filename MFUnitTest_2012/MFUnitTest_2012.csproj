@@ -61,9 +61,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Preview.png">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
@@ -73,7 +70,7 @@
     <None Include="Package.nuspec">
       <SubType>Designer</SubType>
     </None>
-    <Content Include="packages\MFUnitTest.0.14.11.nupkg">
+    <Content Include="packages\MFUnitTest.0.14.12.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <None Include="source.extension.vsixmanifest">
@@ -114,17 +111,22 @@
       <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\MFUnitTest\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup>
-    <PreBuildEvent>xcopy /Y /E /F "$(SolutionDir)MFUnitTest\MFUnitTest\bin\Release\v4.1" "$(ProjectDir)lib\netmf41\"
-xcopy /Y /E /F "$(SolutionDir)MFUnitTest\MFUnitTest\bin\Release\v4.2" "$(ProjectDir)lib\netmf42\" 
-xcopy /Y /E /F "$(SolutionDir)MFUnitTest\MFUnitTest\bin\Release\v4.3" "$(ProjectDir)lib\netmf43\"
+    <PreBuildEvent>xcopy /Y /E /F "$(SolutionDir)MFUnitTest\bin\Release\v4.1" "$(ProjectDir)lib\netmf41"
+xcopy /Y /E /F "$(SolutionDir)MFUnitTest\bin\Release\v4.2" "$(ProjectDir)lib\netmf42" 
+xcopy /Y /E /F "$(SolutionDir)MFUnitTest\bin\Release\v4.3" "$(ProjectDir)lib\netmf43"
 "$(SolutionDir).nuget\nuget.exe" pack "$(ProjectDir)Package.nuspec" -OutputDirectory "$(ProjectDir)packages"</PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent>xcopy /Y /E /F "$(ProjectDir)packages\*.nupkg" "$(SolutionDir)Bin\MFUnitTest\"
-xcopy /Y /E /F "$(TargetDir)$(TargetName).vsix" "$(SolutionDir)Bin\MFUnitTest\"</PostBuildEvent>
+    <PostBuildEvent>xcopy /Y /E /F "$(ProjectDir)packages\*.nupkg" "$(SolutionDir)Bin\"
+xcopy /Y /E /F "$(TargetDir)$(TargetName).vsix" "$(SolutionDir)Bin\"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

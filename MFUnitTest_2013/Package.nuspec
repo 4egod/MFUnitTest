@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>MFUnitTest</id>
-    <version>0.14.11</version>
+    <version>0.14.12</version>
     <title>.NET Micro Framework Unit Test Core</title>
     <authors>Dmitry Tarasov</authors>
     <owners>Dmitry Tarasov</owners>

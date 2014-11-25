@@ -77,7 +77,6 @@
     <None Include="UnitTest1.cs" />
     <None Include="AssemblyInfo.cs" />
     <None Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
@@ -106,6 +105,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Project.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\MFUnitTest\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />

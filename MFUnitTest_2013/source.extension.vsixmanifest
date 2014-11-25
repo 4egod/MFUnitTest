@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="MFUnitTestPackage.vs12" Version="0.14.11" Language="en-US" Publisher="Dmitry Tarasov" />
+    <Identity Id="MFUnitTestPackage.vs12" Version="0.14.12" Language="en-US" Publisher="Dmitry Tarasov" />
     <DisplayName>MFUnitTest Visual Studio 2013 Support</DisplayName>
     <Description xml:space="preserve">A project template for creating .NET Micro Framework Unit Test Projects.</Description>
     <Icon>Project.ico</Icon>

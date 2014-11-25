@@ -27,7 +27,7 @@
   </WizardExtension>
   <WizardData>
     <packages repository="extension" repositoryId="MFUnitTestPackage.vs12">
-      <package id="MFUnitTest" version="0.14.11" />
+      <package id="MFUnitTest" version="0.14.12" />
     </packages>
   </WizardData>
 </VSTemplate>

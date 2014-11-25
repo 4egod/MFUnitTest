@@ -1,5 +1,5 @@
 
-namespace System.Diagnostics
+namespace MFUnitTest
 {
     using System;
     using Microsoft.SPOT;
