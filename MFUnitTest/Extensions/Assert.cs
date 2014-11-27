@@ -131,6 +131,8 @@ namespace Microsoft.VisualStudio.TestTools.UnitTesting
                 bool b2 = false;
                 char c1 = '\0';
                 char c2 = '\0';
+                DateTime dt1 = new DateTime(), dt2 = new DateTime();
+                TimeSpan tm1 = new TimeSpan(), tm2 = new TimeSpan();
 
                 switch (eType.Name)
                 {
@@ -146,7 +148,9 @@ namespace Microsoft.VisualStudio.TestTools.UnitTesting
                     case "Double": d1 = (Double)expected; break;
                     case "Boolean": b1 = (Boolean)expected; break;
                     case "Char": c1 = (Char)expected; break;
-                    default: Assert.Fail("Unsupported value type."); break;
+                    case "DateTime": dt1 = (DateTime)expected; break;
+                    case "TimeSpan": tm1 = (TimeSpan)expected; break;
+                    default: Assert.Fail("ASSERT EXCEPTION: Unsupported value type"); break;
                 }
 
                 switch (aType.Name)
@@ -163,10 +167,12 @@ namespace Microsoft.VisualStudio.TestTools.UnitTesting
                     case "Double": d2 = (Double)actual; break;
                     case "Boolean": b2 = (Boolean)actual; break;
                     case "Char": c2 = (Char)actual; break;
-                    default: Assert.Fail("Unsupported value type."); break;
+                    case "DateTime": dt2 = (DateTime)actual; break;
+                    case "TimeSpan": tm2 = (TimeSpan)actual; break;
+                    default: Assert.Fail("ASSERT EXCEPTION: Unsupported value type"); break;
                 }
 
-                if ((i1 == i2) && (ui1 == ui2) && (d1 == d2) && (b1 == b2) && (c1 == c2))
+                if ((i1 == i2) && (ui1 == ui2) && (d1 == d2) && (b1 == b2) && (c1 == c2) && (dt1.Ticks == dt2.Ticks) && (tm1.Ticks == tm2.Ticks))
                 {
                     return true;
                 }
