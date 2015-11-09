@@ -269,7 +269,7 @@ namespace MFUnitTest
 
             if (TestCompleted != null) TestCompleted(new TestCompletedEventArgs(res));
 
-            Microsoft.SPOT.Debug.GC(true);
+            //Microsoft.SPOT.Debug.GC(true);
         }
 
         private static void OnTestsCompleted()
