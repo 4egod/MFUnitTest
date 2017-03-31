@@ -50,7 +50,7 @@
     <None Include="Package.nuspec">
       <SubType>Designer</SubType>
     </None>
-    <Content Include="packages\MFUnitTest.0.15.8.nupkg">
+    <Content Include="packages\MFUnitTest.1.15.11.10.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <None Include="source.extension.vsixmanifest">
@@ -90,7 +90,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup>
-    <PreBuildEvent>xcopy /Y /E /F "$(SolutionDir)MFUnitTest\bin\Release\v4.3" "$(ProjectDir)lib\netmf43"
+    <PreBuildEvent>xcopy /Y /E /F "$(SolutionDir)MFUnitTest\bin\Release\v4.4" "$(ProjectDir)lib\netmf44\"
 "$(SolutionDir).nuget\nuget.exe" pack "$(ProjectDir)Package.nuspec" -OutputDirectory "$(ProjectDir)packages"</PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>

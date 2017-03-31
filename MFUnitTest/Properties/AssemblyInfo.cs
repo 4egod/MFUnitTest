@@ -10,5 +10,5 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCopyright("Copyright © Dmitry Tarasov, 2015")]
 [assembly: AssemblyTrademark("MFUnitTest")]
 [assembly: AssemblyCulture("")]
-[assembly: AssemblyVersion("0.15.8")]
-[assembly: AssemblyFileVersion("0.15.8")]
+[assembly: AssemblyVersion("1.15.11.10")]
+[assembly: AssemblyFileVersion("1.15.11.10")]

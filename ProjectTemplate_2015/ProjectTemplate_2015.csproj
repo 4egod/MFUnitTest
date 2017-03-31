@@ -40,8 +40,8 @@
     <ProjectGuid>{117D47E7-CFD1-4534-AEEB-F31DA00F9D67}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ProjectTemplate_2013</RootNamespace>
-    <AssemblyName>ProjectTemplate_2013</AssemblyName>
+    <RootNamespace>ProjectTemplate_2015</RootNamespace>
+    <AssemblyName>ProjectTemplate_2015</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <GeneratePkgDefFile>false</GeneratePkgDefFile>
