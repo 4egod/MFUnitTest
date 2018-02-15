@@ -1,23 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
-  <Metadata>
-    <Identity Id="MFUnitTestPackage.vs14" Version="1.15.11.10" Language="en-US" Publisher="Dmitry Tarasov" />
-    <DisplayName>MFUnitTest Visual Studio 2015 Support</DisplayName>
-    <Description xml:space="preserve">A project template for creating .NET Micro Framework Unit Test Projects.</Description>
-    <Icon>Project.ico</Icon>
-    <PreviewImage>Preview.png</PreviewImage>
-    <Tags>NETMF;Micro Framework;Unit Test;C#</Tags>
-  </Metadata>
-  <Installation InstalledByMsi="false">
-    <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Community" />
-    <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Enterprise" />
-  </Installation>
-  <Dependencies>
-    <Dependency d:Source="Installed" Id="Microsoft.NETMF.CoreDebug.vs14" DisplayName=".NET Micro Framework project system" Version="[4.4,5.0)" />
-    <Dependency d:Source="Installed" Id="Microsoft.VisualStudio.MPF.14.0" DisplayName="Visual Studio MPF 14.0" Version="[14.0,15.0)" />
-    <Dependency d:Source="Installed" Id="NuGet.0d421874-a3b2-4f67-b53a-ecfce878063b" DisplayName="NuGet Package Manager for Visual Studio 2015" Version="[3.0.60624.657,4.0)" />
-  </Dependencies>
-  <Assets>
-    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="ProjectTemplate_2015" d:TargetPath="|ProjectTemplate_2015;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
-  </Assets>
+    <Metadata>
+        <Identity Id="MFUnitTestPackage.vs14" Version="1.15.11.10" Language="en-US" Publisher="Dmitry Tarasov" />
+        <DisplayName>MFUnitTest Visual Studio 2015 Support</DisplayName>
+        <Description xml:space="preserve">A project template for creating .NET Micro Framework Unit Test Projects.</Description>
+        <Icon>Project.ico</Icon>
+        <PreviewImage>Preview.png</PreviewImage>
+        <Tags>NETMF;Micro Framework;Unit Test;C#</Tags>
+    </Metadata>
+    <Installation InstalledByMsi="false">
+        <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Community" />
+        <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Enterprise" />
+    </Installation>
+    <Dependencies>
+        <Dependency d:Source="Installed" Id="Microsoft.NETMF.CoreDebug.vs14" DisplayName=".NET Micro Framework project system" Version="[4.4,5.0)" />
+        <Dependency d:Source="Installed" Id="Microsoft.VisualStudio.MPF.14.0" DisplayName="Visual Studio MPF 14.0" Version="[14.0,15.0)" />
+        <Dependency d:Source="Installed" Id="NuGet.0d421874-a3b2-4f67-b53a-ecfce878063b" DisplayName="NuGet Package Manager for Visual Studio 2015" Version="[3.0.60624.657,4.0)" />
+    </Dependencies>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="ProjectTemplate_2015" d:TargetPath="|ProjectTemplate_2015;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
+    </Assets>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0.26606.0,16.0)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
 </PackageManifest>
