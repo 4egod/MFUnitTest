@@ -155,14 +155,7 @@ $RECYCLE.BIN/
 # Mac desktop service store files
 .DS_Store
 /.nuget
-/MFUnitTest_2012/lib
-/MFUnitTest_2013/lib
-/MFUnitTest_2013/packages
-/MFUnitTest_2012/packages
-/MFUnitTest_2015/lib
-/MFUnitTest_2015/packages
-/MFUnitTest/PrintHelper_noforech.cs
-/.vs/MFUnitTest/v15/sqlite3/storage.ide
-/MFUnitTest_2017/lib
-/MFUnitTest_2017/packages
-/.vs/MFUnitTest/v15/Server/sqlite3
+/packages
+lib/
+bin/
+/.vs

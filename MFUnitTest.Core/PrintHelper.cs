@@ -14,20 +14,20 @@ namespace MFUnitTest
 
             string cs = string.Empty;
 
-            foreach (var item in results)
+            for (int i = 0; i < results.Length; i++)
             {
-                if (String.Compare(cs, item.TestClass) != 0)
+                if (String.Compare(cs, results[i].TestClass) != 0)
                 {
-                    cs = item.TestClass;
+                    cs = results[i].TestClass;
                     classCount += 1;
                 }
 
-                switch (item.TestStatus)
+                switch (results[i].TestStatus)
                 {
                     case TestStatus.Passed:
                         {
                             p += 1;
-                            ticks += item.ElapsedMilliseconds;
+                            ticks += results[i].ElapsedMilliseconds;
                             break;
                         }
                     case TestStatus.Failed: f += 1; break;
@@ -48,9 +48,9 @@ namespace MFUnitTest
             Debug.Print("\n");
             Debug.Print("========================= Micro Framework Unit Test =========================");
 
-            foreach (var item in results)
+            for (int i = 0; i < results.Length; i++)
             {
-                Debug.Print(item.ToString());
+                Debug.Print(results[i].ToString());
             }
 
             Debug.Print("=============================================================================");
